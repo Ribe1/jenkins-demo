@@ -4,9 +4,18 @@ pipeline {
     stages {
 
 
-       stage( 'Build' ) { 
+       stage( 'Linux Commands' ) { 
             steps {
-                echo 'Build started'
+                
+                sh 'pwd'
+                
+                sh 'hostname'
+
+                sh 'date'
+
+                sh 'uptime'
+
+                sh 'ls -lrt jenkins-demo'
             }
         }
      }
